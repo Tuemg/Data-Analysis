@@ -11,3 +11,30 @@ Quarto enables you to weave together content and executable code into a finished
 ```{r}
 1 + 1
 ```
+
+Let's start our analysis by loading the appropriate dataset as:
+
+Load dataset
+
+```{r}
+# Load dataset
+library(readxl)
+hdss <- read_excel("data/sample_hdss.xlsx")
+
+# Show summary
+summary(hdss$Age)
+```
+
+Load dataset - displaying only the results.
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
+library(readxl)
+
+# Load dataset
+hdss <- read_excel("data/sample_hdss.xlsx")
+
+# Show summary of Age column
+summary(hdss$Age)
+# Sex distribution
+table(hdss$gender)
+```

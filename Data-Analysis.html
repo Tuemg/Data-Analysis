@@ -108,6 +108,32 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <pre><code>[1] 2</code></pre>
 </div>
 </div>
+<p>Let’s start our analysis by loading the appropriate dataset as:</p>
+<p>Load dataset</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Load dataset</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(readxl)</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>hdss <span class="ot">&lt;-</span> <span class="fu">read_excel</span>(<span class="st">"data/sample_hdss.xlsx"</span>)</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Show summary</span></span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(hdss<span class="sc">$</span>Age)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+ 0.5202 10.9213 20.7776 25.7907 37.7769 95.7782 </code></pre>
+</div>
+</div>
+<p>Load dataset - displaying only the results.</p>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+ 0.5202 10.9213 20.7776 25.7907 37.7769 95.7782 </code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+  F   M 
+249 251 </code></pre>
+</div>
+</div>
 </section>
 
 </main>
