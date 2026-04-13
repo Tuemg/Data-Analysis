@@ -39,3 +39,11 @@ summary(hdss$Age)
 # Sex distribution
 table(hdss$gender)
 ```
+
+### Text and Images
+
+You can add text here just like a word processor.
+
+## Equations
+
+The equation is $E = mc^2$. Mix of text and Math as, the mean is $\bar{x} = `r mean(c(1,2,3))`$.
