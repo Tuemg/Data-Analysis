@@ -1,5 +1,6 @@
 ---
 title: "Data-Analysis"
+format: html
 ---
 
 This is a Quarto tutorial for data analysis. It concerns on how to link R Quarto with GitHub server. GitHub provides free access to project staff regarding the progress and intervention practices.
